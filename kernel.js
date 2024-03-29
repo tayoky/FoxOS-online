@@ -1,9 +1,10 @@
-alert('test');
-const emptyWindow = document.createDocumentFragment;
-emptyWindow.appendChild(document.createElement("div").appendChild(
-    document.createElement("div"),
-    document.createElement("div")
-))
+const FPS = 30;
+setInterval(udapte,1000/FPS);
 
+function udapte(){
+    let windows = document.getElementsByClassName("window");
 
-document.getElementById("display").appendChild(document.createElement("div"));
+    for (let index = 0; index < windows.length; index++) {
+        index[index]
+    }
+}

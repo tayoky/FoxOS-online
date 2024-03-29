@@ -1,13 +1,39 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+
+#display{
+    background-color: orange;
+    margin:  0 px;
+    width: 100%;
+    height: 100%;
+}
+
+#taskbar{
+    height: 10%;
+    width: 80%;
+    margin-left: 10%;
+    
+    position: absolute;
+    top: 85%;
+
+
+    border-radius: 2vh;
+    background-color: gray;
+}
+
 .window{
-    border: 2px solid grey;
-    border-radius: 10px;
     background-color: white;
+    position: absolute;
+    border:  2px solid grey;
+    border-radius: 2vh;
 }
 
 .toolbar{
-    border-bottom: 2px solid grey;
-    width: 100%;
-    margin: 0%;
-    height: 50px;
-    background-color: white;
+    padding-left:2% ;
+    border-bottom:2px solid grey ;
 }

@@ -3,14 +3,27 @@
     <head>
         <title>FoxOS-online</title>
     </head>
-    <body>
-        <noscript>endable Javascript in your stetting to use thisOnline OS</noscript>
-        <script  src="/kernel.js"></script>
 
+    <style>
+        @import "style.css";
+    </style>
+
+    <body>
         <div id="display">
-            <div id="task-bar">
-                
+
+
+
+            <div class="window" style="width: 50%; height: 50%; left: 25%; top: 10%;">
+                <div class="toolbar">
+                    test-win
+                </div>
+                test
             </div>
+
+
+
+            <div id="taskbar"></div>
         </div>
+        <script type="text/javascript" src="kernel.js"></script>
     </body>
 </html>
