@@ -10,6 +10,7 @@ document.onmouseup = releaseMouse;
 window.onmousemove = mouseMove;
 
 function toolbarClick(Select) {
+    alert("test");
     let tevent = window.Event;
     selectwindow = Select;
     selectwindowOffsetX = Tevent.pageX - windows[Select].getAttribute("left");
