@@ -8,15 +8,24 @@ let selectwindow = -1;
 let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
 
-document.onmouseup = releaseMouse;
+//rajoute les evenement
+document.addEventListener("mouseup", (e) =>{
+    releaseMouse();
+    alert("test");
+})
+
+
+document.addEventListener("mousemove",e => {
+    mouseMove(e);
+})
 
 function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
     alert("cilck");
     let tevent = window.event;
     selectwindow = Select;
-    selectwindowOffsetX = tevent.pageX - windows[Select].offsetLeft;
-    selectwindowOffsetY = tevent.pageY - windows[Select].offsetTop;
+    selectwindowOffsetX = tevent.pageX - windows[Select].getAttribute("left");
+    selectwindowOffsetY = tevent.pageY - windows[Select].getAttribute("top");
 }
 
 function releaseMouse() {
