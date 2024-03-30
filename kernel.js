@@ -12,7 +12,8 @@ document.onmouseup = releaseMouse;
 
 function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
-    let event = window.event;
+    alert("cilck");
+    let tevent = window.event;
     selectwindow = Select;
     selectwindowOffsetX = tevent.pageX - windows[Select].offsetLeft;
     selectwindowOffsetY = tevent.pageY - windows[Select].offsetTop;
