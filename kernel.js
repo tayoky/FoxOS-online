@@ -18,6 +18,17 @@ document.addEventListener("mousemove",e => {
     mouseMove(e);
 })
 
+
+//on recupre les apps
+fetch("/app.json")
+.then(res => res.json())
+.then(data => {
+    let apps = data;
+})
+.catch(error => {
+    console.log("load apps failed error : ",error);
+})
+
 function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
     let tevent = window.event;
@@ -41,3 +52,4 @@ function mouseMove(event) {
         windows[selectwindow].style.top = event.y - selectwindowOffsetY + "px";
     }
 }
+
