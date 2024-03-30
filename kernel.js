@@ -9,7 +9,6 @@ let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
 
 document.onmouseup = releaseMouse;
-window.onmousemove = mouseMove;
 
 function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
