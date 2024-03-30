@@ -11,7 +11,7 @@ window.onmousemove = mouseMove;
 
 function toolbarClick(Select) {
     alert("test");
-    let tevent = window.Event;
+    let tevent = window.event;
     selectwindow = Select;
     selectwindowOffsetX = Tevent.pageX - windows[Select].getAttribute("left");
     selectwindowOffsetY = Tevent.pageY - windows[Select].getAttribute("top");
