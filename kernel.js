@@ -14,8 +14,8 @@ function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
     let event = window.event;
     selectwindow = Select;
-    selectwindowOffsetX = event.pageX - windows[Select].offsetLeft;
-    selectwindowOffsetY = event.pageY - windows[Select].offsetTop;
+    selectwindowOffsetX = tevent.pageX - windows[Select].offsetLeft;
+    selectwindowOffsetY = tevent.pageY - windows[Select].offsetTop;
 }
 
 function releaseMouse() {
