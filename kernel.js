@@ -7,6 +7,7 @@ let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
 
 document.onmouseup = releaseMouse;
+window.onmousemove = mouseMove;
 
 function toolbarClick(Select) {
     tevent = window.Event;
@@ -22,8 +23,13 @@ function releaseMouse() {
 function update() {
     windows = document.getElementsByClassName("window");
 
-    for (let index = 0; index < windows.length; index++) {
-        // Faites quelque chose avec chaque élément de la liste "windows"
-        // Par exemple : windows[index].style.backgroundColor = "red";
+
+}
+
+function mouseMove(event){
+    if(selectwindow !== -1){
+        windows[selectwindow].setAttribute("left",event.x - selectwindowOffsetX);
+        windows[selectwindow].setAttribute("top" ,event.y - selectwindowOffsetY);
     }
 }
+
