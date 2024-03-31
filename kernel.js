@@ -32,13 +32,13 @@ fetch("/app.json")
 })
 
 //pour udpate la liste des appps
-udapteAppsList();
+updateAppsList();
 
 
 
 
 
-function udapteAppsList(){
+function updateAppsList(){
     //on range les app dans un liste
 
     //onrenitialise
