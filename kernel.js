@@ -30,7 +30,7 @@ fetch("https://tayoky.github.io/FoxOSonline/apps/app.json")
 })
 .catch(error => {
     console.log("load apps failed error : ",error);
-})
+});
 
 //pour udpate la liste des appps
 updateAppsList();
