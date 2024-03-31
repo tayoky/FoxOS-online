@@ -32,8 +32,6 @@ fetch("https://tayoky.github.io/FoxOSonline/apps/app.json")
     console.log("load apps failed error : ",error);
 });
 
-//pour udpate la liste des appps
-updateAppsList();
 
 
 
@@ -57,6 +55,8 @@ function updateAppsList(){
 
 
 
+//pour udpate la liste des appps
+updateAppsList();
 
 
 
