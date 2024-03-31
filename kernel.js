@@ -22,7 +22,7 @@ document.addEventListener("mousemove",e => {
 
 //on recupre les apps
 let appslist = [];
-fetch("/app.json")
+fetch("/apps/app.json")
 .then(res => res.json())
 .then(data => {
     apps = data;
