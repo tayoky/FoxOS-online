@@ -48,7 +48,7 @@ body{
 }
 
 .taskbarbtn{
-    height: 10vh;
+    height: 90%;
     aspect-ratio: 1/1;
     border-radius: 1vh;
 }
