@@ -1,5 +1,5 @@
 {"apps":{
-    "stettings":{"url":"/apps/stettings","pin":true},
-    "testapp":{"url":"/apps/testapp","pin":true}
+    "stettings":{"url":"https://tayoky.github.io/FoxOSonline/apps/stettings/","pin":true},
+    "testapp":{"url":"https://tayoky.github.io/FoxOSonline/apps/stettings/","pin":true}
     }
 }
