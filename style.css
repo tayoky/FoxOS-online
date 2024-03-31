@@ -17,11 +17,9 @@ body{
     height: 10%;
     width: 80%;
     margin-left: 10%;
-    
+    box-shadow: 0px 0px 1vh black;
     position: absolute;
     top: 85%;
-
-
     border-radius: 2vh;
     background-color: gray;
 }
@@ -31,7 +29,8 @@ body{
     position: absolute;
     border:  2px solid grey;
     border-radius: 2vh;
-    box-shadow: 0px 0px 5px black;
+    /* pour mettre une ombre center*/
+    box-shadow: 0px 0px 1vh black;
 }
 
 .toolbar{
