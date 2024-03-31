@@ -54,6 +54,7 @@ function updateAppsList(){
         appbutton.classList.add("taskbarbtn");
         appbutton.appendChild(document.createElement("img"));
         appbutton.children[0].src = apps.apps[appName].url +"/logo.png";
+        appbutton.children[0].classList.add("taskbarimg");
         taskbar.appendChild(appbutton);
     }
 }

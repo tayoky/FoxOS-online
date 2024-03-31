@@ -52,3 +52,9 @@ body{
     aspect-ratio: 1/1;
     border-radius: 1vh;
 }
+
+.taskbarimg{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+}
