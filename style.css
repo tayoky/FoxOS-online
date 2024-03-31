@@ -17,11 +17,20 @@ body{
     height: 10%;
     width: 80%;
     margin-left: 10%;
+
+    /*les ombres*/
     box-shadow: 0px 0px 1vh black;
+
+
     position: absolute;
     top: 85%;
+    
     border-radius: 2vh;
     background-color: gray;
+
+    /* pour aligner de gauche a droite*/
+    display: flex;
+    
 }
 
 .window{
@@ -36,4 +45,9 @@ body{
 .toolbar{
     padding-left:2% ;
     border-bottom:2px solid grey ;
+}
+
+.taskbarbtn{
+    height: 90%;
+    aspect-ratio: 1/1;
 }

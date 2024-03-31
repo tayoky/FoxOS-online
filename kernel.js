@@ -4,7 +4,7 @@ setInterval(update, 1000 / FPS);
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
 let windows = document.getElementsByClassName("window");
 let taskbar = document.getElementById("taskbar");
-let apps;
+let apps = {};
 
 let selectwindow = -1;
 let selectwindowOffsetX = 0;
@@ -28,6 +28,9 @@ fetch("https://tayoky.github.io/FoxOSonline/apps/app.json")
 .then(data => {
     apps = data;
     console.log('succeful load app : ',apps);
+    //pour udpate la liste des appps
+    console.log(apps);
+    updateAppsList();
 })
 .catch(error => {
     console.log("load apps failed error : ",error);
@@ -48,16 +51,16 @@ function updateAppsList(){
         appslist.push(apps.apps[appName]);
         
         let appbutton = document.createElement("div");
+        appbutton.className = "taskbarbtn"
         appbutton.appendChild(document.createElement("img"));
-        appbutton.children[1].src = apps.apps[appName].url +"/logo.png";
+        appbutton.children[0].src = apps.apps[appName].url +"/logo.png";
         taskbar.appendChild(appbutton);
     }
 }
 
 
 
-//pour udpate la liste des appps
-updateAppsList();
+
 
 
 
