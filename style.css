@@ -31,7 +31,7 @@ body{
     position: absolute;
     border:  2px solid grey;
     border-radius: 2vh;
-    box-shadow: 10px ;
+    box-shadow: 10px 10px 5px black;
 }
 
 .toolbar{
