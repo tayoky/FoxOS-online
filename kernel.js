@@ -28,7 +28,7 @@ fetch("https://tayoky.github.io/FoxOSonline/apps/app.json")
 .then(data => {
     apps = data;
     console.log('succeful load app : ',apps);
-    //pour udpate la liste des appps
+    //pour udpate la liste des apps
     console.log(apps);
     updateAppsList();
 })
