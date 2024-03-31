@@ -51,6 +51,7 @@ function updateAppsList(){
         let appbutton = document.createElement("div");
         appbutton.appendChild(document.createElement("img"));
         appbutton.children[1].src = apps.apps[appName].url +"/logo.png";
+        taskbar.appendChild(appbutton);
     }
 }
 
