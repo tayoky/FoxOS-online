@@ -1,5 +1,5 @@
 {"apps":{
-    "stettings":{"url":"url here","pin":true},
+    "stettings":{"url":"/apps/stettings","pin":true},
     "testapp":{"url":"/apps/testapp","pin":true}
     }
 }
