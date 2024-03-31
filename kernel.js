@@ -27,6 +27,7 @@ fetch("https://tayoky.github.io/FoxOSonline/apps/app.json")
 .then(res => res.json())
 .then(data => {
     apps = data;
+    console.log('succeful load app : ',apps);
 })
 .catch(error => {
     console.log("load apps failed error : ",error);
