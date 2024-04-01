@@ -1,6 +1,8 @@
+//import les modules
+import * as windowJS from './modules/window.js' ;
+
 const FPS = 30;
 setInterval(update, 1000 / FPS);
-
 
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
 let windows = document.getElementsByClassName("window");
@@ -18,7 +20,7 @@ document.addEventListener("mouseup", (e) =>{
 
 
 document.addEventListener("mousemove",e => {
-    mouseMove(e);
+    windowJS.mouseMove();
 })
 
 
