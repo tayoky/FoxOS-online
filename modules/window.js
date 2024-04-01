@@ -22,6 +22,8 @@ document.addEventListener("mousemove",e => {
 })*/
 
 
+import {windows,selectwindow,
+    selectwindowOffsetX,selectwindowOffsetY} from '../kernel.js'
 
 
 
