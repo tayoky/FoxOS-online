@@ -20,7 +20,7 @@ document.addEventListener("mouseup", (e) =>{
 
 
 document.addEventListener("mousemove",e => {
-    windowJS.mouseMove();
+    windowJS.mouseMove(e);
 })
 
 
