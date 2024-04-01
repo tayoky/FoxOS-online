@@ -26,7 +26,7 @@ document.addEventListener("mousemove",e => {
 
 
 
-export function toolbarClick(Select) {
+function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
     let tevent = window.event;
     selectwindow = Select;
@@ -34,16 +34,16 @@ export function toolbarClick(Select) {
     selectwindowOffsetY = tevent.pageY - parseInt(windows[Select].style.top);
 }
 
-export function releaseMouse() {
+function releaseMouse() {
     selectwindow = -1;
 }
 
-export function update() {
+function update() {
     // Mettez à jour l'état de vos fenêtres ici
     // Par exemple, redimensionnez-les, mettez à jour leur contenu, etc.
 }
 
-export function mouseMove(event) {
+function mouseMove(event) {
     if (selectwindow !== -1) {
         windows[selectwindow].style.left = event.x - selectwindowOffsetX + "px";
         windows[selectwindow].style.top = event.y - selectwindowOffsetY + "px";
