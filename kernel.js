@@ -1,5 +1,3 @@
-//import les modules
-import * as windowJS from './modules/window.js' ;
 
 const FPS = 30;
 setInterval(update, 1000 / FPS);
@@ -12,6 +10,10 @@ let apps = {};
 let selectwindow = -1;
 let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
+
+//import les modules
+import * as windowJS from './modules/window.js' ;
+
 
 //rajoute les evenement
 document.addEventListener("mouseup", (e) =>{
