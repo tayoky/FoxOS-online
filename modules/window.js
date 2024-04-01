@@ -23,7 +23,7 @@ document.addEventListener("mousemove",e => {
 
 
 import {windows,selectwindow,
-    selectwindowOffsetX,selectwindowOffsetY} from 'https://tayoky.github.io/FoxOSonline/kernel.js'
+    selectwindowOffsetX,selectwindowOffsetY} from 'https://tayoky.github.io/FoxOSonline/kernel.js';
 
 
 
