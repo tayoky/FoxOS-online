@@ -61,4 +61,8 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 1vh;
+    transition:transform 0.3s;;
+}
+.taskbarimg:hover{
+    transform: scale(1.2);
 }
