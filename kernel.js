@@ -1,5 +1,5 @@
 //import les modules todo
-import * as windowJS from 'https://tayoky.github.io/FoxOSonline/modules/window.js' ;
+import * as windowJS from './modules/window.js' ;
 
 const FPS = 30;
 setInterval(update, 1000 / FPS);
