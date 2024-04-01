@@ -12,7 +12,7 @@ let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
 
 //import les modules todo
-//import * as windowJS from 'https://tayoky.github.io/FoxOSonline/modules/window.js' ;
+import * as windowJS from 'https://tayoky.github.io/FoxOSonline/modules/window.js' ;
 
 
 //rajoute les evenement
@@ -22,7 +22,7 @@ document.addEventListener("mouseup", (e) =>{
 
 
 document.addEventListener("mousemove",e => {
-    mouseMove(e);
+    windowJS.mouseMove(e);
 })
 
 
