@@ -5,7 +5,7 @@
 
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
 let windows = document.getElementsByClassName("window");
-let taskbar = document.getElementById("taskbar");
+//let taskbar = document.getElementById("taskbar");
 
 let selectwindow = -1;
 let selectwindowOffsetX = 0;
