@@ -1,7 +1,7 @@
 //modules pour gerer les fenetre
 
-const FPS = 30;
-setInterval(update, 1000 / FPS);
+//const FPS = 30;
+//setInterval(update, 1000 / FPS);
 
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
 let windows = document.getElementsByClassName("window");
