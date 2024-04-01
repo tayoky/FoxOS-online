@@ -1,6 +1,6 @@
 //modules pour gerer les fenetre
 
-/*const FPS = 30;
+const FPS = 30;
 setInterval(update, 1000 / FPS);
 
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
@@ -19,11 +19,10 @@ document.addEventListener("mouseup", (e) =>{
 
 document.addEventListener("mousemove",e => {
     mouseMove(e);
-})*/
+})
 
 
-import {windows,selectwindow,
-    selectwindowOffsetX,selectwindowOffsetY} from 'https://tayoky.github.io/FoxOSonline/kernel.js';
+
 
 
 

@@ -1,15 +1,15 @@
 //import les modules todo
-import * as windowJS from './modules/window.js' ;
+//import * as windowJS from './modules/window.js' ;
 
 const FPS = 30;
 setInterval(update, 1000 / FPS);
 
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
-let windows = document.getElementsByClassName("window");
+//let windows = document.getElementsByClassName("window");
 let taskbar = document.getElementById("taskbar");
 let apps = {};
 
-let selectwindow = -1;
+/*let selectwindow = -1;
 let selectwindowOffsetX = 0;
 let selectwindowOffsetY = 0;
 
@@ -25,7 +25,7 @@ document.addEventListener("mouseup", (e) =>{
 
 document.addEventListener("mousemove",e => {
     windowJS.mouseMove(e);
-})
+})*/
 
 
 //on recupre les apps
@@ -72,7 +72,7 @@ function updateAppsList(){
 
 
 
-
+/*
 function toolbarClick(Select) {
     // Utilisez l'objet event passé en argument
     let tevent = window.event;
@@ -83,17 +83,17 @@ function toolbarClick(Select) {
 
 function releaseMouse() {
     selectwindow = -1;
-}
+}*/
 
 function update() {
     // Mettez à jour l'état de vos fenêtres ici
     // Par exemple, redimensionnez-les, mettez à jour leur contenu, etc.
-}
+} /*
 
 function mouseMove(event) {
     if (selectwindow !== -1) {
         windows[selectwindow].style.left = event.x - selectwindowOffsetX + "px";
         windows[selectwindow].style.top = event.y - selectwindowOffsetY + "px";
     }
-}
+}*/
 
