@@ -7,25 +7,13 @@ setInterval(update, 1000 / FPS);
 // Récupérez vos éléments de fenêtre ici (par exemple, par ID ou classe)
 //let windows = document.getElementsByClassName("window");
 let taskbar = document.getElementById("taskbar");
+let display = document.getElementById("display"); 
 let apps = {};
 
-/*let selectwindow = -1;
-let selectwindowOffsetX = 0;
-let selectwindowOffsetY = 0;
 
 
 
 
-
-//rajoute les evenement
-document.addEventListener("mouseup", (e) =>{
-    releaseMouse();
-})
-
-
-document.addEventListener("mousemove",e => {
-    windowJS.mouseMove(e);
-})*/
 
 
 //on recupre les apps
@@ -59,9 +47,21 @@ function updateAppsList(){
         
         let appbutton = document.createElement("div");
         appbutton.classList.add("taskbarbtn");
-        appbutton.appendChild(document.createElement("img"));
-        appbutton.children[0].src = apps.apps[appName].url +"/logo.png";
-        appbutton.children[0].classList.add("taskbarimg");
+
+        // Créez l'élément image
+        let img = document.createElement("img");
+        img.src = apps.apps[appName].url + "/logo.png";
+        img.classList.add("taskbarimg");
+
+        // Ajoutez le gestionnaire d'événements onclick à l'image
+        img.addEventListener("click", function() {
+            taskbarbtn(apps.apps[appName]);
+        });
+
+        // Ajoutez l'image à l'élément div
+        appbutton.appendChild(img);
+
+        // Ajoutez l'élément div à la barre des tâches
         taskbar.appendChild(appbutton);
     }
 }
@@ -70,32 +70,11 @@ function updateAppsList(){
 
 
 
-
-
-/*
-function toolbarClick(Select) {
-    // Utilisez l'objet event passé en argument
-    let tevent = window.event;
-    selectwindow = Select;
-    selectwindowOffsetX = tevent.pageX - parseInt(windows[Select].style.left);
-    selectwindowOffsetY = tevent.pageY - parseInt(windows[Select].style.top);
-}
-
-function releaseMouse() {
-    selectwindow = -1;
-}*/
-
 function update() {
     // Mettez à jour l'état de vos fenêtres ici
     // Par exemple, redimensionnez-les, mettez à jour leur contenu, etc.
-} /*
+} 
 
-function mouseMove(event) {
-    if (selectwindow !== -1) {
-        windows[selectwindow].style.left = event.x - selectwindowOffsetX + "px";
-        windows[selectwindow].style.top = event.y - selectwindowOffsetY + "px";
-    }
-}*/
 
 
 

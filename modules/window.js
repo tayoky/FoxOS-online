@@ -50,3 +50,41 @@ function mouseMove(event) {
     }
 }
 
+
+//generic function fuction utilisé par d'autre module et kes programmes
+function createWindow(x,y,width,height,inner,title){
+    
+    let windowDIV = document.createElement("div");
+    windowDIV.classList.add("window");
+
+    // Position
+    windowDIV.style.left = x ; 
+    windowDIV.style.top = y ;
+    windowDIV.style.width = width ;
+    windowDIV.style.height = height ;
+
+    windowDIV.num = windows.length;
+    // Événement onmousedow
+    windowDIV.addEventListener("mousedown", function() {
+        toolbarClick(this.num);
+    });
+
+    // Barre d'outils
+    const toolbar = document.createElement("div");
+    toolbar.classList.add("toolbar");
+    toolbar.innerHTML = title;
+    windowDIV.appendChild(toolbar);
+
+    // Ajoutez le contenu interne s'il existe
+    if (inner !== null) {
+        windowDIV.innerHTML += inner;
+    }
+
+    // Ajoutez la fenêtre à l'affichage
+    const display = document.getElementById("display"); // Assurez-vous que "display" est correctement défini
+    display.appendChild(windowDIV);
+
+    // Mettez à jour la liste des fenêtres
+    windows = document.getElementsByClassName("window")
+}
+
