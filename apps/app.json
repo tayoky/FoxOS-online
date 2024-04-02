@@ -1,5 +1,5 @@
 {"apps":{
     "stettings":{"url":"https://tayoky.github.io/FoxOS-online/apps/stettings/","pin":true,"sandbox":false},
-    "testapp":{"url":"d/apps/stettings/","pin":true,"sandbox":true}
+    "testapp":{"url":"/apps/stettings/","pin":true,"sandbox":true}
     }
 }
