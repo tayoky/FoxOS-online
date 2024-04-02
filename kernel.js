@@ -30,7 +30,7 @@ document.addEventListener("mousemove",e => {
 
 //on recupre les apps
 let appslist = [];
-fetch("https://tayoky.github.io/FoxOS-online/apps/app.json")
+fetch("https://raw.githubusercontent.com/tayoky/FoxOS-online/main/apps/app.json")
 .then(res => res.json())
 .then(data => {
     apps = data;
