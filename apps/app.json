@@ -1,6 +1,6 @@
 {"apps":{
-    "stettings":{"url":"https://tayoky.github.io/FoxOS-online/apps/stettings/","pin":true,"sandbox":false},
-    "testapp":{"url":"https://tayoky.github.io/FoxOS-online/apps/testapp/","pin":true,"sandbox":true},
-    "docs" : {"url":"https://tayoky.github.io/FoxOS-online/apps/docs","pin":true,"sandbox":true}
+    "stettings":{"url":"https://tayoky.github.io/FoxOS-online/apps/stettings/","pin":true,"sandbox":false,"title":"stettings-loading"},
+    "testapp":{"url":"https://tayoky.github.io/FoxOS-online/apps/testapp/","pin":true,"sandbox":true,"title":"testapp"},
+    "docs" : {"url":"https://tayoky.github.io/FoxOS-online/apps/docs","pin":true,"sandbox":true,"title":"FoxOS-docs"}
     }
 }
