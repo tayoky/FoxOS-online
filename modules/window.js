@@ -88,3 +88,6 @@ function createWindow(x,y,width,height,inner,title){
     windows = document.getElementsByClassName("window")
 }
 
+function updateWindowList(){
+    windows = document.getElementsByClassName("window")
+}
