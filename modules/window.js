@@ -91,7 +91,7 @@ function createWindow(x,y,width,height,inner,title){
 function closeWindow(num){
     windows[num].remove();
     updateWindowList();
-    for (let index = num ; index < windows.length; index++) {
+    for (let index = 0 ; index < windows.length; index++) {
         windows[index].num = index;
         windows[index].children[0].children[0].onclick = "closeWindow('" + windows[index].num + "');"
     }
