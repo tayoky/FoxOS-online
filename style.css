@@ -76,6 +76,8 @@ body{
 }
 
 .closebtn{
+    margin: 0px;
+    height: 100%;
     border-radius: 0px;
     border-top-right-radius:2vh ;
     border-left: 2px gray ;
