@@ -30,7 +30,7 @@ body{
 
     /* pour aligner de gauche a droite*/
     display: flex;
-    
+    z-index: 1000000px;
 }
 
 .window{
