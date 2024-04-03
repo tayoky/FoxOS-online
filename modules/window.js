@@ -72,7 +72,7 @@ function createWindow(x,y,width,height,inner,title){
     // Barre d'outils
     const toolbar = document.createElement("div");
     toolbar.classList.add("toolbar");
-    toolbar.innerHTML = title;
+    toolbar.innerHTML = title + '<button class="closebtn" onclick="closeWindow(' + windowDIV.num+');">X</button>';
     windowDIV.appendChild(toolbar);
 
     // Ajoutez le contenu interne s'il existe
@@ -89,11 +89,12 @@ function createWindow(x,y,width,height,inner,title){
 }
 
 function closeWindow(num){
-    windows[num].remove;
-    for (let index = num +1; index < windows.length; index++) {
-        windows[index].num --;
-    }
+    windows[num].remove();
     updateWindowList();
+    for (let index = num ; index < windows.length; index++) {
+        windows[index].num = index;
+        windows[index].children[0].children[0].onclick = "closeWindow('" + windows[index].num + "');"
+    }
 }
 
 function updateWindowList(){
