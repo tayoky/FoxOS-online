@@ -72,7 +72,8 @@ function createWindow(x,y,width,height,inner,title){
     // Barre d'outils
     const toolbar = document.createElement("div");
     toolbar.classList.add("toolbar");
-    toolbar.innerHTML = title + '<button class="closebtn" onclick="closeWindow(this.num);">X</button>';
+    toolbar.innerHTML = title + '<button class="closebtn">X</button>';
+    toolbar.children[0].addEventListener('click', function(){closeWindow(this.num);});
     windowDIV.appendChild(toolbar);
 
     // Ajoutez le contenu interne s'il existe
