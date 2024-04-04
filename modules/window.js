@@ -72,7 +72,7 @@ function createWindow(x,y,width,height,inner,title){
     // Barre d'outils
     const toolbar = document.createElement("div");
     toolbar.classList.add("toolbar");
-    toolbar.innerHTML = title + '<button class="closebtn" onclick="closeWindow(' + windowDIV.num+');">X</button>';
+    toolbar.innerHTML = title + '<button class="closebtn" onclick="closeWindow(this.num);">X</button>';
     windowDIV.appendChild(toolbar);
 
     // Ajoutez le contenu interne s'il existe
@@ -93,7 +93,9 @@ function closeWindow(num){
     updateWindowList();
     for (let index = 0 ; index < windows.length; index++) {
         windows[index].num = index;
-        windows[index].getElementsByClassName("closebtn")[0].onclick = "closeWindow(" + windows[index].num + ");"
+
+        //todo ameliorer plus trad car ne marche :
+        //windows[index].getElementsByClassName("closebtn")[0].onclick = "closeWindow(" + windows[index].num + ");"
     }
 }
 
