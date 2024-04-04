@@ -72,8 +72,20 @@ function createWindow(x,y,width,height,inner,title){
     // Barre d'outils
     const toolbar = document.createElement("div");
     toolbar.classList.add("toolbar");
-    toolbar.innerHTML = title + '<button class="closebtn">X</button>';
-    toolbar.children[0].addEventListener('click', function(){closeWindow(this.num);});
+    toolbar.innerHTML = title;
+
+    //close btn
+    let closebutton = document.createElement("button");
+    closebutton.classList.add("closebtn");
+    closebutton.addEventListener('mousedown', function(){
+        alert("test");
+        closeWindow(this.num);
+    });
+    
+    closebutton.innerHTML = "X";
+
+    toolbar.appendChild(closebutton);
+
     windowDIV.appendChild(toolbar);
 
     // Ajoutez le contenu interne s'il existe
