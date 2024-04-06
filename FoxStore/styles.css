@@ -13,3 +13,7 @@ body{
 #page{
     width: 100%;
 }
+
+#best{
+    border-bottom: 0.5vh;
+}
